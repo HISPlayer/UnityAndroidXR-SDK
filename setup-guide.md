@@ -9,15 +9,15 @@ Getting started with HISPlayer consists of implementing the following steps:
  
       1.3. Configure Unity for Android
 
-      1.4 Configure OpenXR
+      1.4 Configure Android XR
    
-2. HISPlayer OpenXR Sample
+2. HISPlayer AndroidXR Sample
    
-    2.1 Import HISPlayer OpenXR Sample
+    2.1 Import HISPlayer AndroidXR Sample
 
 ## 1.1 Import Unity Packages
 
-You must install a set of specific packages to ensure OpenXR and the VR interactions work correctly.
+You must install a set of specific packages to ensure AndroidXR and the VR interactions work correctly.
 
 1. In the top menu bar, go to **Window > Package Manager**.
 
@@ -28,10 +28,9 @@ You must install a set of specific packages to ensure OpenXR and the VR interact
 </p>
 
 3. Use the search bar in that says “Search in Unity Registry” to find and select each of the following packages, then click the **Install** button for each one:
+    - Unity OpenXR Android XR 
     - XR Interaction Toolkit
-    - XR Plugin Management
-    - XR Composition Layers
-    - OpenXR Plugin
+    - XR Composition Layers    
 
 4. Import Starter Assets:
     - In the Package Manager, select the installed **XR Interaction Toolkit** from the list.
@@ -89,17 +88,19 @@ Alternatively, you may set the Target API level to 34 or higher in the Unity pro
 2. In the left-hand list of the Project Settings window, scroll down and select **XR Plug-in Management**.
 3. In the main panel, click on the **Android Tab**.
 4. Check the box next to **OpenXR** in the Plug-in Providers list.
+5. Check the box next to **Android XR feature group** in the **OpenXR**.
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/6d1cf41f-bc04-4ce7-bf06-3f39be8628cf">
+<img width="700" src="image-2.png">
 </p>
 
-5. If a yellow/red warning triangle appears next to OpenXR, click on the **triangle icon**. A validation window will pop up. Click the **Fix All** button to automatically resolve configuration issues.
+6. If a yellow/red warning triangle appears next to OpenXR, click on the **triangle icon**. A validation window will pop up. Click the **Fix All** button to automatically resolve configuration issues.
 
 **OpenXR Settings**:
 1. In the left-hand list of the Project Settings window, click on **OpenXR** (located directly under XR Plug-in Management).
 
 <p align="center">
+
 <img src="https://github.com/user-attachments/assets/e6ab1fac-94cd-4612-8704-f2d7ccac413b">
 </p>
 
@@ -111,33 +112,35 @@ Alternatively, you may set the Target API level to 34 or higher in the Unity pro
     - Select **Oculus Touch Controller Profile** or other controller profile depending on your VR headsets.
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/7a16549c-1bb4-4669-ad7d-4d1ee4d694c3">
+<img width=800 src="image-3.png">
+<!-- <img src="https://github.com/user-attachments/assets/7a16549c-1bb4-4669-ad7d-4d1ee4d694c3"> -->
 </p>
 
 3. **OpenXR Feature Groups**:
     - Scroll down to the bottom of the OpenXR settings panel.
-    - Check the box for **Meta Quest Support** or other option depending on your VR headset. 
+    - Check the box for **Android XR Support** or other option depending on your VR headset. 
     - Check the box for **Composition Layer Support**.
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/218dbe0e-96ea-4153-a8bf-6fe07e6933b3">
+<img width=760 src="image-4.png">
+<!-- <img src="https://github.com/user-attachments/assets/218dbe0e-96ea-4153-a8bf-6fe07e6933b3"> -->
 </p>
 
-## 2.1 Import HISPlayer OpenXR Sample
+## 2.1 Import HISPlayer AndroidXR Sample
 
-Please, download the sample here: [**OpenXRSample**](https://downloads.hisplayer.com/Unity/XR/HISPlayer_OpenXR_Sample_1.0.0.unitypackage) (no need to download it if you have received it in the email). 
+Please, download the sample here: [**AndroidXRSample**](https://downloads.hisplayer.com/Unity/AndroidXR/HISPlayer_AndroidXR_Sample_1.0.0.unitypackage) (no need to download it if you have received it in the email). 
 
 Before using the sample, please make sure you have followed the above steps to set-up your Unity project for  and HISPlayer SDK. To use the sample, please follow these steps :
   - Configure OpenXR
   - Import HISPlayer SDK
-  - Import HISPlayer OpenXR Sample
-  - Open Assets/OpenXRSample/Scenes/HEVC_8K.unity
+  - Import HISPlayer AndroidXR Sample
+  - Open Assets/AndroidXRSample/Scenes/HEVC_8K.unity
   - Import TextMeshPro. Go to Unity Window > TextMeshPro > Import TMP Essential Resources
   - If you received a license key from HISPlayer, input the license key through the Inspector Unity window: **StreamController GameObject > HISPlayerSample component > License Key**
   - Open File > Build Settings > Add Open Scenes
   - Build and Run
 
-To check how to set up the SDK and API usage, please refer to Assets/OpenXRSample/Scripts/Sample/**HISPlayerSample.cs** and **StreamController** GameObject in the Editor.
+To check how to set up the SDK and API usage, please refer to Assets/AndroidXRSample/Scripts/Sample/**HISPlayerSample.cs** and **StreamController** GameObject in the Editor.
 
 ## Sample Explanation and SDK Usage
 
@@ -151,9 +154,13 @@ For detailed setup instructions for each render mode, please refer to [**RenderM
 
 ### Scene-Specific Notes
 
+#### SampleList Scene
+
+Select one of sample scenes explained below.
+
 #### HEVC_8K Scene
 
-This scene demonstrates high-resolution video playback using **ExternalSurface**  render mode.
+This scene demonstrates high-resolution video playback.
 
 #### 360° Scene
 
