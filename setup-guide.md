@@ -9,7 +9,7 @@ Getting started with HISPlayer consists of implementing the following steps:
  
       1.3. Configure Unity for Android
 
-      1.4 Configure Android XR
+      1.4 Configure OpenXR and Android XR
    
 2. HISPlayer AndroidXR Sample
    
@@ -81,7 +81,7 @@ It is recommended to set Target API Level to 34 or higher. By selecting Android 
 
 Alternatively, you may set the Target API level to 34 or higher in the Unity project settings.
 
-## 1.4 Configure OpenXR
+## 1.4 Configure OpenXR and Android XR
 
 **XR Plugin Management Setup**:
 1. Go to the top menu bar and click **Edit > Project Settings**.
