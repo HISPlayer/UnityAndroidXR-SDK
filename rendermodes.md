@@ -11,10 +11,10 @@ This mode uses **XR Composition Layers** to render video directly onto a composi
 1. Create an empty GameObject.
 2. Attach the following components to it:
    - **Composition Layer** (from the XR Composition Layers package)
-   - **Source Textures** (from the XR Composition Layers package)
+   - **Source Textures** (from the XR Composition Layers package). Set the **Resolution** the same as your video resolution.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/03e6f18d-983b-448a-9f37-ef94ad7a79cd" alt="texto" width="50%" style="height: auto;" />
+   <img alt="image" src="https://github.com/user-attachments/assets/e8d60613-05e2-47ab-b374-ff8d21be752b" />
 </p>
 
 3. In your script (inheriting from `HISPlayerManager`) set the `renderMode` to `HISPlayerRenderMode.ExternalSurface` in the `MultiStreamProperties`.
