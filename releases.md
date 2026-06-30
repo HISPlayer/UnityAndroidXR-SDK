@@ -1,4 +1,8 @@
-# HISPlayer Unity XR SDK Release Notes
+# HISPlayer Unity Android XR SDK Release Notes
+
+### Version 5.8.0
+##### June 30, 2026
+- [**Improvement**] Optimized memory allocation when rendering using Material/RenderTexture/RawImage.
 
 ### Version 5.7.0
 ##### June 26, 2026
