@@ -1,4 +1,4 @@
-# HISPlayer Unity XR SDK
+# HISPlayer Unity Android XR SDK
 
 HISPlayer is the most advanced video streaming player for Unity, supporting local, VOD and live contents. It enables premium DASH and HLS video streaming inside your games and metaverses on VR headsets. We include the support of 8K video playback, Widevine DRM protection for premium contents and advanced features such as multistream or automatic bitrate adaptation to secure the best video quality.
 
@@ -52,19 +52,14 @@ HISPlayer is the most advanced video streaming player for Unity, supporting loca
 |Major version - Android 14 'Upside Down Cake' |Target SDK / API Level: 34|
 
 ### Supported Unity Versions
-  * 2021
-  * 2022
-  * 2023
-  * Unity 6
+  * Unity 6 (version 6000.0.23f1+)
 
 ### Supported Unity's Rendering Mode
   * Render Texture
   * Material Override
   * Raw image
-  * External Surface
 
 ### Supported Graphics API
-  * OpenGLES3
   * Vulkan
 
 ### Supported Editor

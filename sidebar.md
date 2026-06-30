@@ -1,4 +1,4 @@
-- [HISPlayer Unity XR SDK](/introduction.md)
+- [HISPlayer Unity Android XR SDK](/introduction.md)
 - [Quickstart Guide](/setup-guide.md)
 - [HISPlayer API](/hisplayer-api.md)
 - [DRM](/drm.md)
