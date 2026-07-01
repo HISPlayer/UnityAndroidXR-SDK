@@ -107,9 +107,9 @@ Alternatively, you may set the Target API level to 34 or higher in the Unity pro
 2. **Interaction Profiles**:
     - Look for the "Interaction Profiles" section.
     - Click the **"+" (plus)** icon under the list.
-    - Select **Khronos Simple Controller Profile**.
+    - Select **Khronos Simple Controller Profile**. This is needed to support hand tracking.
     - Click the **"+" (plus)** icon again.
-    - Select **Oculus Touch Controller Profile** or other controller profile depending on your VR headsets.
+    - Select **Oculus Touch Controller Profile** or other controller profile depending on your VR headsets. This is needed to support 6DoF (Six Degrees of Freedom) controllers.
 
 <p align="center">
 <img width=800 src="image-3.png">
@@ -118,11 +118,11 @@ Alternatively, you may set the Target API level to 34 or higher in the Unity pro
 
 3. **OpenXR Feature Groups**:
     - Scroll down to the bottom of the OpenXR settings panel.
-    - Check the box for **Android XR Support** or other option depending on your VR headset. 
+    - Check the box for **Android XR Support**. 
     - Check the box for **Composition Layer Support**.
 
 <p align="center">
-<img width=760 src="image-4.png">
+<img width=760 src="image-5.png">
 <!-- <img src="https://github.com/user-attachments/assets/218dbe0e-96ea-4153-a8bf-6fe07e6933b3"> -->
 </p>
 
@@ -160,7 +160,11 @@ Select one of sample scenes explained below.
 
 #### HEVC_8K Scene
 
-This scene demonstrates high-resolution video playback.
+This scene demonstrates high-resolution video playback using **Material** render mode.
+
+#### HEVC_8K Composition Layer Scene
+
+This scene demonstrates high-resolution video playback using **ExternalSurface** render mode.
 
 #### 360° Scene
 

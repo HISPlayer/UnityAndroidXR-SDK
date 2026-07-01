@@ -58,6 +58,7 @@ HISPlayer is the most advanced video streaming player for Unity, supporting loca
   * Render Texture
   * Material Override
   * Raw image
+  * External Surface
 
 ### Supported Graphics API
   * Vulkan
