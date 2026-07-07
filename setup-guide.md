@@ -128,7 +128,7 @@ Alternatively, you may set the Target API level to 34 or higher in the Unity pro
 
 ## 2.1 Import HISPlayer AndroidXR Sample
 
-Please, download the sample here: [**AndroidXRSample**](https://downloads.hisplayer.com/Unity/XR/HISPlayer_AndroidXR_Sample_1.0.2.unitypackage) (no need to download it if you have received it in the email). 
+Please, download the sample here: [**AndroidXRSample**](https://downloads.hisplayer.com/Unity/XR/HISPlayer_AndroidXR_Sample_1.0.3.unitypackage) (no need to download it if you have received it in the email). 
 
 Before using the sample, please make sure you have followed the above steps to set-up your Unity project for  and HISPlayer SDK. To use the sample, please follow these steps :
   - Configure OpenXR
@@ -158,13 +158,13 @@ For detailed setup instructions for each render mode, please refer to [**RenderM
 
 Select one of sample scenes explained below.
 
-#### HEVC_8K Scene
-
-This scene demonstrates high-resolution video playback using **Material** render mode.
-
 #### HEVC_8K Composition Layer Scene
 
 This scene demonstrates high-resolution video playback using **ExternalSurface** render mode.
+
+#### HEVC_8K Render Texture Scene
+
+This scene demonstrates high-resolution video playback using **Render Texture** render mode.
 
 #### 360° Scene
 
