@@ -40,7 +40,7 @@ private IEnumerator SetUpExternalSurface()
     int maxAttempts = 10;
     int attempts = 0;
 
-    SetExternalSurfaceSize(1, 1);
+    SetExternalSurfaceSize(renderScreen, 1, 1);
 
     while (surfacePtr == IntPtr.Zero && attempts < maxAttempts)
     {
@@ -60,12 +60,16 @@ private IEnumerator SetUpExternalSurface()
     SetUpPlayer();
 }
 
-private void SetExternalSurfaceSize(int width, int height)
+private void SetExternalSurfaceSize(GameObject renderScreen, int width, int height)
 {
     TexturesExtension sourceTexturesComponent = renderScreen.GetComponent<TexturesExtension>();
     if (sourceTexturesComponent != null)
     {
         sourceTexturesComponent.Resolution = new Vector2(width, height);
+    }
+    else
+    {
+        Debug.LogError("[Error] TexturesExtension component is not attached.");
     }
 }
 ```
@@ -92,7 +96,7 @@ protected override void EventVideoSizeChange(HISPlayerEventInfo eventInfo)
         int width = (int)eventInfo.param1;
         int height = (int)eventInfo.param2;
 
-        SetExternalSurfaceSize(width, height);
+        SetExternalSurfaceSize(renderScreen, width, height);
     }
 }
 ```
