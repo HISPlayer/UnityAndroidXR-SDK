@@ -195,5 +195,8 @@ It is necessary to call SetUpPlayer() before calling other APIs. This function i
 ### Stereoscopic Video Playback
 Refer to [**Stereoscopic Video**](./stereoscopic.md).
 
+### Download Video for Offline Playback
+Refer to [**Download Video Content**](./download_content.md).
+
 ## More Information, Features and APIs
 For more information about the supported features and APIs, please refer to the following [**HISPlayer API**](/hisplayer-api.md).
