@@ -168,7 +168,10 @@ This scene demonstrates high-resolution video playback using **Render Texture** 
 
 #### 360° Scene
 
-This scene demonstrates 360° video playback using **RenderTexture** render mode. The `RenderScreen` GameObject uses a **Sphere** as its Mesh Filter and only has a **Mesh Renderer**. This is the recommended configuration for 360° video.
+This scene demonstrates 360° video playback using **External Surface** render mode. Set the **Xr Layer Projection** option to **Equirect 360**.
+<p align="center">
+    <img src="image-8.png" width="400"/>
+</p>
 
 #### Ambisonic Audio Scene
 

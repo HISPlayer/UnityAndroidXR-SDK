@@ -1,5 +1,9 @@
 # HISPlayer Unity Android XR SDK Release Notes
 
+##### September XX, 2026
+- [**Added**] Support DRM L1 with External Surface. (OpenXR, AndroidXR only)
+- [**Improvement**] Display watermark over External Surface. (OpenXR, AndroidXR only)
+
 ### Version 5.8.2
 ##### July 27, 2026
 - [**Improvement**] Optimized Ambisonics support with HLS/DASH streaming.
