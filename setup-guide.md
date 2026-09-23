@@ -134,10 +134,10 @@ Before using the sample, please make sure you have followed the above steps to s
   - Configure OpenXR
   - Import HISPlayer SDK
   - Import HISPlayer AndroidXR Sample
-  - Open Assets/AndroidXRSample/Scenes/HEVC_8K.unity
   - Import TextMeshPro. Go to Unity Window > TextMeshPro > Import TMP Essential Resources
-  - If you received a license key from HISPlayer, input the license key through the Inspector Unity window: **StreamController GameObject > HISPlayerSample component > License Key**
-  - Open File > Build Settings > Add Open Scenes
+  - Open all Unity scene in Assets/AndroidXRSample/Scenes and do the following for each scene:
+    - If you received a license key from HISPlayer, input the license key through the Inspector Unity window: **StreamController GameObject > HISPlayerSample component > License Key**
+    - Open File > Build Settings > Add Open Scenes
   - Build and Run
 
 To check how to set up the SDK and API usage, please refer to Assets/AndroidXRSample/Scripts/Sample/**HISPlayerSample.cs** and **StreamController** GameObject in the Editor.
@@ -158,11 +158,11 @@ The recommended **RenderMode** is **ExternalSurface** for an improved high resol
 
 Select one of sample scenes explained below.
 
-#### HEVC_8K Composition Layer Scene
+#### HEVC_8K_ExternalSurface Scene
 
 This scene demonstrates high-resolution video playback using **ExternalSurface** render mode.
 
-#### HEVC_8K Render Texture Scene
+#### HEVC_8K_RenderTexture Scene
 
 This scene demonstrates high-resolution video playback using **RenderTexture** render mode.
 
