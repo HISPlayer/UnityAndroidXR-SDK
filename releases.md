@@ -1,8 +1,15 @@
 # HISPlayer Unity Android XR SDK Release Notes
 
-##### September XX, 2026
-- [**Added**] Support DRM L1 with External Surface. (OpenXR, AndroidXR only)
-- [**Improvement**] Display watermark over External Surface. (OpenXR, AndroidXR only)
+### Version 6.0.0
+##### September 23, 2026
+- [**Added**] `XRLayerProperties` to support DRM L1 and composition layer usage improvement for OpenXR and AndroidXR using External Surface render mode.
+  - `Transform xrLayerVideoScreen`
+  - `int xrLayerOrder`
+  - `HISPlayerXRLayerProjection xrLayerProjection`
+  - `HISPlayerStereoMode xrLayerStereoMode`
+  - `bool xrLayerMatchVideoAspect`
+  - `float xrLayerRadius` 
+- [**Improvement**] Optimized HISPlayer Event synchronization routine.
 
 ### Version 5.8.2
 ##### July 27, 2026
