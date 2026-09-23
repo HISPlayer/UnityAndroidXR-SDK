@@ -128,7 +128,7 @@ Alternatively, you may set the Target API level to 34 or higher in the Unity pro
 
 ## 2.1 Import HISPlayer AndroidXR Sample
 
-Please, download the sample here: [**AndroidXRSample**](https://downloads.hisplayer.com/Unity/XR/HISPlayer_AndroidXR_Sample_1.0.3.unitypackage) (no need to download it if you have received it in the email). 
+Please, download the sample here: [**AndroidXRSample**](https://downloads.hisplayer.com/Unity/XR/HISPlayer_AndroidXR_Sample_2.0.3.unitypackage) (no need to download it if you have received it in the email). 
 
 Before using the sample, please make sure you have followed the above steps to set-up your Unity project for  and HISPlayer SDK. To use the sample, please follow these steps :
   - Configure OpenXR
@@ -150,7 +150,7 @@ The **RenderScreen** GameObject is a Quad that displays the video.
 
 To select the rendering mode, go to **StreamController** GameObject > **HISPlayerSample** script > **MultiStreamProperties** > **Element 0** > **RenderMode**. The script automatically enables or disables the required components from the **RenderScreen** based on your selection.
 
-For detailed setup instructions for each render mode, please refer to [**RenderModes**](/rendermodes.md).
+The recommended **RenderMode** is **ExternalSurface** for an improved high resolution video rendering performance and DRM L1 support. For detailed setup instructions for each render mode, please refer to [**RenderModes**](/rendermodes.md).
 
 ### Scene-Specific Notes
 
@@ -164,15 +164,29 @@ This scene demonstrates high-resolution video playback using **ExternalSurface**
 
 #### HEVC_8K Render Texture Scene
 
-This scene demonstrates high-resolution video playback using **Render Texture** render mode.
+This scene demonstrates high-resolution video playback using **RenderTexture** render mode.
+
+#### DRM Scene
+
+This scene demonstrates a Widevine DRM L1 protected video playback using **ExternalSurface** render mode. For more details about DRM, refer to [**DRM**](/drm.md) page.
 
 #### 360° Scene
 
-This scene demonstrates 360° video playback using **External Surface** render mode. Set the **Xr Layer Projection** option to **Equirect 360**.
+This scene demonstrates 360° video playback using **External Surface** render mode. **XR Layer Projection** option is set to **Equirect 360**.
 <p align="center">
-    <img src="image-8.png" width="400"/>
+    <img width="544" height="325" alt="image" src="https://github.com/user-attachments/assets/63d49922-a9ac-4e6f-bcbe-5488369eae9d" />
 </p>
 
+If you want to use **RenderTexture** or **Material** render mode instead, the `RenderScreen` GameObject should use a **Sphere** as its Mesh Filter and have only a **Mesh Renderer**.
+
+#### Stereoscopic Scene
+
+This scene demonstrates a Left/Right stereoscopic video playback using **ExternalSurface** render mode. **XR Layer Stereo Mode** option is set to **Left Right**.
+<p align="center">
+    <img width="542" height="321" alt="image" src="https://github.com/user-attachments/assets/8079cfa9-7e35-431e-9dd9-a6fe19e4123e" />
+</p>
+
+For more details about stereoscopic, refer to [**Stereoscopic**](/stereoscopic.md) page.
 #### Ambisonic Audio Scene
 
 For information about Ambisonic audio support, please refer to [Ambisonic](/ambisonic.md)
