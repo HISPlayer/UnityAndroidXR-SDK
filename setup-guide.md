@@ -113,17 +113,15 @@ Alternatively, you may set the Target API level to 34 or higher in the Unity pro
 
 <p align="center">
 <img width=800 src="image-3.png">
-<!-- <img src="https://github.com/user-attachments/assets/7a16549c-1bb4-4669-ad7d-4d1ee4d694c3"> -->
 </p>
 
 3. **OpenXR Feature Groups**:
     - Scroll down to the bottom of the OpenXR settings panel.
     - Check the box for **Android XR Support**. 
-    - Check the box for **Composition Layer Support**.
+    - Check the box for **Composition Layer Support**. This will automatically enable **HISPlayer XR Video Layer**.
 
 <p align="center">
-<img width=760 src="image-5.png">
-<!-- <img src="https://github.com/user-attachments/assets/218dbe0e-96ea-4153-a8bf-6fe07e6933b3"> -->
+<img width="680" height="720" alt="image" src="https://github.com/user-attachments/assets/2556c48a-edd0-44bd-8b17-c40346622313" />
 </p>
 
 ## 2.1 Import HISPlayer AndroidXR Sample
