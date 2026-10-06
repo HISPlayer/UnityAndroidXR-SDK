@@ -186,27 +186,33 @@ This scene demonstrates a Left/Right stereoscopic video playback using **Externa
 
 For more details about stereoscopic, refer to [**Stereoscopic**](/stereoscopic.md) page.
 
-#### 180 Stereoscopic with External Surface
+#### 180 Stereoscopic
 
 This scene demonstrates a 180° Left/Right stereoscopic video playback using **ExternalSurface** render mode. **XR Layer Projection** option is set to **Equirect 180** and **XR Layer Stereo Mode** option is set to **Left Right**.
+<p align="center">
+    <img width="542" alt="image" src="https://github.com/user-attachments/assets/2f0e4446-764a-4e5d-8ce7-25f41f14a84f" />
+</p>
 
 For more details about stereoscopic, refer to [**Stereoscopic**](/stereoscopic.md) page.
 
-#### Multistreams with External Surface
+#### Multistreams
 
 This scene demonstrates the playback of two videos at the same time using **ExternalSurface** render mode. Each video is configured as a separate element in **MultiStreamProperties**.
 
-#### MV-HEVC with External Surface
+#### MV-HEVC
 
 This scene demonstrates a stereoscopic **MV-HEVC** video playback using **ExternalSurface** render mode. **XR Layer Stereo Mode** option is set to **Left Right**.
 
 For more details about MV-HEVC, refer to [**Stereoscopic**](/stereoscopic.md) page.
 
-#### Spatial Audio Scene with External Surface
+#### Spatial Audio Scene
 
 Two helper GameObjects are present in the scene: **FillAudioSourceGroup** and **GetAudioSourceGroup**. Activating or deactivating them switches between the corresponding audio retrieval APIs.
+<p align="center">
+    <img width="300" alt="image" src="https://github.com/user-attachments/assets/5807a4b0-269c-4f92-8db6-abb5a45a11e6" />
+</p>
 
-For more information, please refer to the following Audio Retrieval guide.
+For more information, please refer to the following [**Audio Retrieval guide**](/audio-retrieval.md).
 
 #### Ambisonic Audio Scene
 
