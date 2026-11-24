@@ -1,5 +1,11 @@
 # HISPlayer Unity Android XR SDK Release Notes
 
+### Version 6.1.1
+##### November xx, 2026
+- [**Added**] Add **void AddStream(StreamProperties newStream, out int playerIndex)** API.
+- [**Improved**] Fixed adding new ambisonic streaming while playing.
+- [**Improved**] Fixed crash when running on Development mode.
+
 ### Version 6.1.0
 ##### November 20, 2026
 - [**Added**] Download and offline playback support for HLS/DASH, DRM, Progressive Download contents.
