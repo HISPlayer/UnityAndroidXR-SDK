@@ -126,7 +126,7 @@ Alternatively, you may set the Target API level to 34 or higher in the Unity pro
 
 ## 2.1 Import HISPlayer AndroidXR Sample
 
-Please, download the sample here: [**AndroidXRSample**](https://downloads.hisplayer.com/Unity/XR/HISPlayer_AndroidXR_Sample_2.1.1.unitypackage) (no need to download it if you have received it in the email). 
+Please, download the sample here: [**AndroidXRSample**](https://downloads.hisplayer.com/Unity/XR/HISPlayer_AndroidXR_Sample_2.2.1.unitypackage) (no need to download it if you have received it in the email). 
 
 Before using the sample, please make sure you have followed the above steps to set-up your Unity project for  and HISPlayer SDK. To use the sample, please follow these steps :
   - Configure OpenXR
