@@ -49,6 +49,45 @@ You must install a set of specific packages to ensure AndroidXR and the VR inter
 <img src="https://github.com/user-attachments/assets/94fd5675-c8e0-4124-ad34-2115e59a6c9b">
 </p>
 
+### Required Unity XR package versions (Android XR)
+
+When you build for Android XR devices such as Samsung Galaxy XR, install these package versions or newer:
+
+| Package | Package name | Minimum version |
+|---|---|---|
+| OpenXR Plugin | `com.unity.xr.openxr` | **1.18.0** |
+| XR Composition Layers | `com.unity.xr.compositionlayers` | **2.6.1** |
+
+#### How to install
+
+Use one of these methods.
+
+##### Option 1: Package Manager
+
+1. Open **Window > Package Manager**.
+2. Select **Unity Registry** and find **OpenXR Plugin**.
+3. Open the **Version History** tab, select **1.18.0** (or newer), and click **Install** or **Update**.
+4. Repeat for **XR Composition Layers**, version **2.6.1** (or newer).
+
+##### Option 2: Install by name
+
+1. Open **Window > Package Manager**.
+2. Click **+** and select **Install package by name...**.
+3. Enter `com.unity.xr.openxr` as the name and `1.18.0` as the version, then click **Install**.
+4. Repeat with `com.unity.xr.compositionlayers` and `2.6.1`.
+
+##### Option 3: Edit `Packages/manifest.json`
+
+Add or update these lines in the `dependencies` section:
+
+```json
+"com.unity.xr.openxr": "1.18.0",
+"com.unity.xr.compositionlayers": "2.6.1",
+```
+
+Save the file and return to the Unity Editor. Unity resolves the packages automatically.
+
+
 ## 1.2 Import HISPlayer SDK
 
 Importing the SDK is the same as importing other normal packages in Unity. 
